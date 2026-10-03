@@ -523,3 +523,108 @@ body {
     color: white;
     transform: scale(1.1);
 }
+/*Brand story*/
+.brand-story {
+    display: flex;
+    align-items: stretch;
+
+    padding: 80px 5%;
+
+    background-color: #171717;
+    color: white;
+
+    gap: 50px;
+}
+.story-image {
+    width: 50%;
+    overflow: hidden;
+}
+.story-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+.story-content {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px 40px;
+}
+.story-label {
+    margin: 0 0 15px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #c8ff32;
+}
+.story-content h2 {
+    margin: 0 0 25px;
+
+    font-size: 42px;
+    line-height: 1.05;
+    font-weight: 700;
+}
+.story-description {
+    max-width: 480px;
+
+    margin: 0 0 30px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #cfcfcf;
+}
+.story-stats {
+    display: flex;
+    gap: 45px;
+
+    margin-bottom: 35px;
+}
+.stat {
+    min-width: 80px;
+}
+.stat h3 {
+    margin: 0 0 5px;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #c8ff32;
+}
+.stat p {
+    margin: 0;
+
+    font-size: 10px;
+    letter-spacing: 0.5px;
+
+    color: #aaa;
+}
+.brand-story .story-button {
+    align-self: flex-start;
+
+    padding: 13px 20px;
+
+    border: 1px solid white;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
+}
+.brand-story .story-button:hover {
+    background-color: #c8ff32;
+    border-color: #c8ff32;
+    color: #171717;
+}
