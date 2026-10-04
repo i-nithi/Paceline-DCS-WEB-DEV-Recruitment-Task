@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -180,9 +183,37 @@ body {
     line-height: 1.5;
     margin-bottom: 32px;
 }
-.hero-buttons {
-    display: flex;
-    gap: 12px;
+.hero-btn {
+    display: inline-block;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn.primary {
+    background-color: #c4f52f;
+    color: #111;
+    border: 1px solid #c4f52f;
+}
+
+.hero-btn.secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.hero-btn.primary:hover {
+    background-color: #111;
+    color: #c4f52f;
+    border-color: #111;
+}
+
+.hero-btn.secondary:hover {
+    background-color: white;
+    color: #111;
 }
 .shop-button {
     background-color: #c8ff32;
@@ -1585,4 +1616,26 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/*ABOUT AND HOME PAGE NAVIGATION HOVER EFFECT*/
+.about-breadcrumb a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+.about-breadcrumb a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.about-breadcrumb a:hover::after {
+    width: 100%;
 }
