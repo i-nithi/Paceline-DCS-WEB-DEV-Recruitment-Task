@@ -1090,3 +1090,499 @@ body {
     color: #222;
     margin-top: 35px;
 }
+/* =========================
+   WHAT WE STAND FOR
+========================= */
+
+.what-we-stand-for {
+    background-color: #f3eee3;
+    padding: 70px 4.5% 75px;
+}
+
+.stand-heading {
+    margin-bottom: 28px;
+}
+
+.stand-heading h2 {
+    font-size: 28px;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -0.8px;
+}
+
+/* Cards container */
+
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+/* Outer card */
+
+.value-card {
+    height: 230px;
+    perspective: 1000px;
+}
+
+/* Rotating part */
+
+.value-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease;
+    transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+
+.value-card:hover .value-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front + Back */
+
+.value-card-front,
+.value-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+/* Front */
+
+.value-card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.value-number {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.number-one {
+    color: #ef592c;
+}
+
+.number-two {
+    color: #baf22f;
+}
+
+.number-three {
+    color: #d88a42;
+}
+
+.value-card-front h3 {
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Back */
+
+.value-card-back {
+    display: flex;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.value-card-back p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+}
+/* =========================
+   TEN SEASONS IN — TIMELINE
+========================= */
+
+.timeline-section {
+    background-color: #f3eee3;
+    padding: 80px 4.5%;
+}
+
+.timeline-heading {
+    margin-bottom: 55px;
+}
+
+.timeline-heading h2 {
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin: 0;
+    font-weight: 800;
+}
+
+/* Timeline layout */
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+/* Each timeline item */
+
+.timeline-item {
+    position: relative;
+    padding-top: 35px;
+}
+
+/* The straight line */
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d6d1c7;
+    transition: background-color 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+/* Don't extend the last line beyond the timeline */
+
+.timeline-item:last-child .timeline-line {
+    width: 100%;
+}
+
+/* Timeline content */
+
+.timeline-content h3 {
+    font-size: 42px;
+    line-height: 1;
+    color: #f15a29;
+    margin: 0 0 25px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.timeline-content h4 {
+    font-size: 14px;
+    margin: 0 0 25px;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    max-width: 270px;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+/* =========================
+   TIMELINE HOVER PROGRESS
+========================= */
+
+/* Hovering 2015 */
+
+.timeline:has(.timeline-item:nth-child(1):hover)
+.timeline-item:nth-child(1) .timeline-line {
+    background-color: #f15a29;
+    box-shadow: 0 0 8px rgba(241, 90, 41, 0.4);
+}
+
+
+/* Hovering 2018
+   → 2015 + 2018 light up
+*/
+
+.timeline:has(.timeline-item:nth-child(2):hover)
+.timeline-item:nth-child(-n+2) .timeline-line {
+    background-color: #f15a29;
+    box-shadow: 0 0 8px rgba(241, 90, 41, 0.4);
+}
+
+
+/* Hovering 2022
+   → 2015 + 2018 + 2022 light up
+*/
+
+.timeline:has(.timeline-item:nth-child(3):hover)
+.timeline-item:nth-child(-n+3) .timeline-line {
+    background-color: #f15a29;
+    box-shadow: 0 0 8px rgba(241, 90, 41, 0.4);
+}
+
+
+/* Hovering 2026
+   → everything lights up
+*/
+
+.timeline:has(.timeline-item:nth-child(4):hover)
+.timeline-item:nth-child(-n+4) .timeline-line {
+    background-color: #f15a29;
+    box-shadow: 0 0 8px rgba(241, 90, 41, 0.4);
+}
+/* =========================
+   MEET THE FOUNDERS
+========================= */
+
+.founders-section {
+    background-color: #f3eee3;
+    padding: 80px 4.5%;
+}
+
+.founders-heading {
+    margin-bottom: 30px;
+}
+
+.founders-heading h2 {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.founders-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.founder-card {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+/* =========================
+   MEET THE FOUNDERS
+========================= */
+
+.founders-section {
+    background-color: #f3eee3;
+    padding: 80px 4.5%;
+}
+
+.founders-heading {
+    margin-bottom: 30px;
+}
+
+.founders-heading h2 {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.founders-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.founder-card {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.founder-info {
+    padding: 22px 24px 28px;
+}
+.founder-image {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+}
+
+.founder-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.founder-info h3 {
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.founder-role {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #f15a29;
+    margin: 0 0 14px;
+}
+
+.founder-description {
+    max-width: 500px;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+}
+.founder-badge {
+    position: absolute;
+    left: 20px;
+    bottom: 18px;
+
+    background-color: #c4f52f;
+    color: #111;
+
+    padding: 6px 10px;
+    border-radius: 20px;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    z-index: 2;
+}
+.founder-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+    transition: left 0.7s ease;
+
+    pointer-events: none;
+}
+.founder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+/* =========================
+   ABOUT CTA
+========================= */
+
+.about-cta {
+    background-color: #c4f52f;
+    text-align: center;
+    padding: 75px 5% 85px;
+}
+
+.cta-label {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 0 28px;
+    color: #111;
+}
+
+.about-cta h2 {
+    font-size: clamp(55px, 7vw, 95px);
+    line-height: 0.88;
+    letter-spacing: -4px;
+    font-weight: 800;
+    margin: 0 0 35px;
+    color: #111;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.cta-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 145px;
+    height: 48px;
+
+    padding: 0 20px;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/* Filled button */
+
+.cta-primary {
+    background-color: #111;
+    color: #c4f52f;
+    border: 1px solid #111;
+}
+
+.cta-primary:hover {
+    background-color: transparent;
+    color: #111;
+}
+
+/* Outlined button */
+
+.cta-secondary {
+    background-color: transparent;
+    color: #111;
+    border: 1px solid #111;
+}
+
+.cta-secondary:hover {
+    background-color: #111;
+    color: #c4f52f;
+}
+
+/* =========================
+   VISIT US
+========================= */
+
+.visit-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 420px;
+}
+
+.visit-content {
+    background-color: #171716;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 60px 12%;
+}
+
+.visit-content .section-label {
+    color: #c4f52f;
+    margin-bottom: 30px;
+}
+
+.visit-content h2 {
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.visit-map {
+    overflow: hidden;
+}
+
+.visit-map img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
