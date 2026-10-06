@@ -1639,3 +1639,566 @@ body {
 .about-breadcrumb a:hover::after {
     width: 100%;
 }
+
+/* ================================
+   MOBILE RESPONSIVENESS
+================================ */
+
+@media (max-width: 768px) {
+
+    /* ---------- HEADER ---------- */
+
+    .top-bar {
+        height: 22px;
+        font-size: 7px;
+    }
+
+    .top-left {
+        width: 35%;
+        padding-left: 8px;
+    }
+
+    .top-center {
+        width: 30%;
+    }
+
+    .top-right {
+        width: 35%;
+        padding-right: 8px;
+    }
+
+    .navbar {
+        padding: 12px 16px;
+    }
+
+    .left-group {
+        font-size: 18px;
+    }
+
+    .center-group {
+        display: none;
+    }
+
+    .right-group {
+        gap: 10px;
+    }
+
+    .header-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-icon img {
+        width: 17px;
+        height: 17px;
+    }
+
+
+    /* ---------- HOME HERO ---------- */
+
+    .hero {
+        min-height: 500px;
+        background-position: center;
+    }
+
+    .hero-content {
+        left: 7%;
+        right: 7%;
+        max-width: none;
+    }
+
+    .hero-label {
+        font-size: 9px;
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+        line-height: 0.95;
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hero-btn {
+        padding: 12px 16px;
+        font-size: 9px;
+    }
+
+    .hero-slider {
+        bottom: 18px;
+        right: 7%;
+    }
+
+
+    /* ---------- SHOP BY CATEGORY ---------- */
+
+    .shop-category {
+        padding: 55px 5%;
+    }
+
+    .category-header {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .category-header h2 {
+        font-size: 28px;
+        line-height: 1.1;
+    }
+
+    .view-collections {
+        display: inline-block;
+        margin-top: 18px;
+        font-size: 10px;
+    }
+
+    .category-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .category-card {
+        height: 280px;
+    }
+
+    .category-content {
+        bottom: 18px;
+        left: 15px;
+    }
+
+    .category-content h3 {
+        font-size: 18px;
+    }
+
+    .category-content p {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    /* ---------- NEW ARRIVALS ---------- */
+
+    .new-arrivals {
+        padding: 55px 5%;
+    }
+
+    .arrivals-header {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .arrivals-header h2 {
+        font-size: 27px;
+    }
+
+    .arrival-filters {
+        flex-wrap: wrap;
+        margin-top: 18px;
+        gap: 6px;
+    }
+
+    .arrival-filters button {
+        padding: 7px 12px;
+        font-size: 9px;
+    }
+
+    .arrival-products {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .product-card {
+        padding-bottom: 55px;
+    }
+
+    .product-image {
+        height: 210px;
+    }
+
+    .product-badge {
+        top: 8px;
+        left: 8px;
+        padding: 4px 6px;
+        font-size: 8px;
+    }
+
+    .wishlist {
+        top: 6px;
+        right: 8px;
+        font-size: 18px;
+    }
+
+    .product-brand {
+        font-size: 9px;
+    }
+
+    .product-info h3 {
+        font-size: 10px;
+    }
+
+    .product-price {
+        font-size: 10px;
+    }
+
+
+    /* ---------- BRAND STORY ---------- */
+
+    .brand-story {
+        display: flex;
+        flex-direction: column;
+        padding: 55px 5%;
+        gap: 25px;
+    }
+
+    .story-image,
+    .story-content {
+        width: 100%;
+    }
+
+    .story-image {
+        height: 300px;
+    }
+
+    .story-content {
+        padding: 10px 0;
+    }
+
+    .story-content h2 {
+        font-size: 34px;
+    }
+
+    .story-description {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .story-stats {
+        gap: 25px;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+
+    .stat h3 {
+        font-size: 22px;
+    }
+
+    .brand-story .story-button {
+        font-size: 9px;
+    }
+
+
+    /* ---------- COLLECTIONS ---------- */
+
+    .running-collections {
+        padding: 55px 5%;
+    }
+
+    .collections-header h2 {
+        font-size: 30px;
+    }
+
+    .collection-cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .collection-card {
+        height: 400px;
+    }
+
+    .collection-content {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .collection-content h3 {
+        font-size: 25px;
+    }
+
+
+    /* ---------- NEWSLETTER ---------- */
+
+    .newsletter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        padding: 50px 5%;
+    }
+
+    .newsletter-content h2 {
+        font-size: 30px;
+    }
+
+    .newsletter-content p {
+        font-size: 12px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+    .newsletter-form input {
+        min-width: 0;
+        padding: 15px;
+    }
+
+    .newsletter-form button {
+        width: 110px;
+        font-size: 10px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .site-footer {
+        padding: 0 5%;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 25px;
+        padding: 50px 0;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand h2 {
+        font-size: 25px;
+    }
+
+    .footer-brand p {
+        font-size: 11px;
+    }
+
+    .footer-column h3 {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+
+    .footer-column a {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 25px 0;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
+
+    .legal-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .legal-links a {
+        font-size: 10px;
+    }
+
+
+    /* ================================
+       ABOUT PAGE
+    ================================ */
+
+    .about-hero {
+        padding: 35px 5% 50px;
+    }
+
+    .about-breadcrumb {
+        margin-bottom: 35px;
+        font-size: 9px;
+    }
+
+    .about-hero h1 {
+        font-size: 58px;
+        letter-spacing: -2px;
+    }
+
+    .about-intro {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+    }
+
+    .about-hero img {
+        height: 300px;
+    }
+
+
+    /* ---------- WHY WE EXIST ---------- */
+
+    .why-we-exist {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 55px 5%;
+    }
+
+    .why-left h2 {
+        font-size: 36px;
+    }
+
+    .why-right {
+        max-width: none;
+    }
+
+    .why-right p {
+        font-size: 11px;
+    }
+
+
+    /* ---------- WHAT WE STAND FOR ---------- */
+
+    .what-we-stand-for {
+        padding: 55px 5%;
+    }
+
+    .stand-heading h2 {
+        font-size: 25px;
+    }
+
+    .values-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .value-card {
+        height: 210px;
+    }
+
+
+    /* ---------- TIMELINE ---------- */
+
+    .timeline-section {
+        padding: 55px 5%;
+    }
+
+    .timeline-heading {
+        margin-bottom: 40px;
+    }
+
+    .timeline-heading h2 {
+        font-size: 38px;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .timeline-item {
+        padding-top: 25px;
+    }
+
+    .timeline-content h3 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .timeline-content h4 {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .timeline-content p {
+        max-width: none;
+        font-size: 10px;
+    }
+
+
+    /* ---------- VISIT US ---------- */
+
+    .visit-section {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .visit-content {
+        min-height: 280px;
+        padding: 50px 8%;
+    }
+
+    .visit-content h2 {
+        font-size: 40px;
+    }
+
+    .visit-map {
+        height: 300px;
+    }
+
+
+    /* ---------- FOUNDERS ---------- */
+
+    .founders-section {
+        padding: 55px 5%;
+    }
+
+    .founders-heading {
+        margin-bottom: 25px;
+    }
+
+    .founders-heading h2 {
+        font-size: 28px;
+    }
+
+    .founders-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .founder-image {
+        height: 320px;
+    }
+
+    .founder-info {
+        padding: 18px 20px 24px;
+    }
+
+    .founder-info h3 {
+        font-size: 17px;
+    }
+
+    .founder-description {
+        font-size: 10px;
+    }
+
+
+    /* ---------- ABOUT CTA ---------- */
+
+    .about-cta {
+        padding: 60px 5% 65px;
+    }
+
+    .about-cta h2 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-buttons a {
+        width: 100%;
+        max-width: 280px;
+    }
+}
