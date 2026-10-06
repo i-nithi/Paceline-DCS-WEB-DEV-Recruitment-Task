@@ -152,7 +152,7 @@ body {
 .hero {
     position: relative;
     min-height: 520px;
-    background-image: url("images/home/hero1.png");
+    background-image: url("images/home/hero1.webp");
     background-size: cover;
     background-position: center;
     color: white;
