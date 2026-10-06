@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paceline — Our Story</title>
     <link rel="stylesheet" href="style.css">
+       <script src="https://kit.fontawesome.com/4362c25fdc.js" crossorigin="anonymous"></script>
 </head>
 <body>
  <header>
@@ -24,23 +25,26 @@
             PACELINE
         </div>
         <div class="center-group">
-    <a href="#">Men</a>
-    <a href="#">Women</a>
-    <a href="#">Footwear</a>
-    <a href="#">Apparel</a>
-    <a href="#">Brands</a>
-    <a href="#">Sale</a>
+   <a href="index.html#collections">Men</a>
+<a href="index.html#collections">Women</a>
+    <a href="index.html#new-arrivals">Footwear</a>
+    <a href="index.html#collections">Apparel</a>
+    <a href="index.html#new-arrivals">Brands</a>
+    <a href="index.html#new-arrivals">Sale</a>
     <a href="#">About</a>
 </div>
       <div class="right-group">
-    <a href="#" class="header-icon">
-        <img src="images/search.jpg" alt="Search">
+    <a href="#" class="header-icon" id="searchIcon">
+        <i class="fa-solid fa-magnifying-glass"></i>
     </a>
+    <div class="search-bar" id="searchBar">
+        <input type="text" placeholder="Search...">
+    </div>
     <a href="#" class="header-icon">
         <img src="images/profileicon.png" alt="Profile">
     </a>
     <a href="#" class="header-icon">
-        <img src="images/carticon.jpg" alt="Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
     </a>
 </div>
     </nav>
@@ -60,7 +64,7 @@
         we'd always wanted. A decade in, we're still hand-picking every shoe,
         every layer and every accessory for runners just like us.
     </p>
-    <img src="images/about/main_story_section.png" alt="Runners on the road">
+    <img src="images/about/main_story_section.webp" alt="Runners on the road">
 </section>
         <section class="why-we-exist">
     <div class="why-left">
@@ -207,7 +211,7 @@
         <h2>Visit us in</h2>
     </div>
     <div class="visit-map">
-        <img src="images/about/visit_us.png" alt="Map showing Paceline store location">
+        <img src="images/about/visit_us.webp" alt="Map showing Paceline store location">
     </div>
 </section>
         <section class="founders-section">
@@ -219,7 +223,7 @@
         <!-- Rae -->
         <div class="founder-card">
             <div class="founder-image">
-                <img src="images/about/founders1.png" alt="Rae Sinclair">
+                <img src="images/about/founders1.webp" alt="Rae Sinclair">
                 <span class="founder-badge">
                     12x sub-3 marathoner
                 </span>
@@ -239,7 +243,7 @@
         <!-- Jamie -->
         <div class="founder-card">
             <div class="founder-image">
-                <img src="images/about/founders2.png" alt="Jamie Roy">
+                <img src="images/about/founders2.webp" alt="Jamie Roy">
                 <span class="founder-badge">
                     20+ years coaching
                 </span>
@@ -268,9 +272,9 @@
         <a href="#" class="cta-primary">
             SHOP FOOTWEAR
         </a>
-        <a href="#" class="cta-secondary">
-            BOOK GAIT ANALYSIS
-        </a>
+        <a href="#" class="cta-secondary" id="bookGaitBtn">
+    BOOK GAIT ANALYSIS
+</a>
     </div>
 </section>
     </main>

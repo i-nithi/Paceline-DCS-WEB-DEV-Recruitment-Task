@@ -57,6 +57,7 @@ body {
     align-items: center;
     justify-content: space-between;
      padding: 14px 42px;
+     background-color: #efe9de;
 }
 .announcement-bar,
 .seasonal-bar {
@@ -149,6 +150,7 @@ body {
     font-weight: 800;
     letter-spacing: 1px;
 }
+
 .hero {
     position: relative;
     min-height: 520px;
@@ -248,13 +250,14 @@ body {
 }
 .shop-category {
     padding: 80px 5%;
-    background-color: #fff;
+   background-color: #f3efe7;
 }
 .category-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 35px;
+    background-color: #f3efe7;
 }
 .category-label {
     font-size: 11px;
@@ -704,7 +707,7 @@ body {
 /* COLLECTION CARDS */
 .running-collections {
     padding: 80px 5%;
-    background-color: #ffffff;
+    background-color: #f3efe7;
 }
 .collections-header {
     margin-bottom: 30px;
@@ -1567,6 +1570,7 @@ body {
     background-color: transparent;
     color: #111;
     border: 1px solid #111;
+    
 }
 
 .cta-secondary:hover {
@@ -1682,16 +1686,45 @@ body {
     .right-group {
         gap: 10px;
     }
-
-    .header-icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    .header-icon img {
+.fa-cart-shopping {
+     width: 20px; 
+        height: 20px; 
+        color : black; 
+        text-decoration: none; 
+        width: 17px;
+        height: 17px;
+}
+.header-icon:active .fa-cart-shopping {
+    color: #111;
+}
+  .header-icon { 
+        width: 20px; 
+        height: 20px; 
+        color : black; 
+        text-decoration: none; 
+         
+    }  
+    fa-solid fa-magnifying-glass
+    {
+        width: 20px; 
+        height: 20px; 
+        color : black; 
+        text-decoration: none; 
         width: 17px;
         height: 17px;
     }
+    .header-icon:active .fa-magnifying-glass {
+    color: #111;
+}
+
+    .search-bar {
+    display: none;
+}
+
+.search-bar.active {
+    display: block;
+}
+    
 
 
     /* ---------- HOME HERO ---------- */
