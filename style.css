@@ -1381,7 +1381,7 @@ body {
     /* ---------- HOME HERO ---------- */
     .hero {
         min-height: 500px;
-        background-position: center;
+        background-position: 65% center;
     }
     .hero-content {
         left: 7%;
