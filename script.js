@@ -61,3 +61,25 @@ filterButtons.forEach(button => {
 
     });
 });
+
+function showMessage(event, message) {
+    event.preventDefault();
+
+    const messageBox = document.createElement("div");
+
+    messageBox.textContent = message;
+    messageBox.classList.add("message-box");
+
+    document.body.appendChild(messageBox);
+
+    setTimeout(function() {
+        messageBox.remove();
+    }, 3000);
+}
+
+document.querySelectorAll(".coming-soon").forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        alert("This page is coming soon!");
+    });
+});

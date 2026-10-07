@@ -784,6 +784,18 @@ body {
     padding: 30px 0;
     border-top: 1px solid #3a3a3a;
 }
+
+.message-box {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #C4F52F;
+    color: black;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    z-index: 1000;
+}
 .footer-bottom p {
     margin: 0;
     font-size: 12px;
