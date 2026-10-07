@@ -666,9 +666,7 @@ body {
 .collection-card:hover .collection-content a {
     color: #c8ff32;
 }
-/* ================================
-   NEWSLETTER
-================================ */
+/* NEWSLETTER */
 .newsletter {
     display: flex;
     justify-content: space-between;
