@@ -132,15 +132,15 @@
             <h2>New arrivals for the run.</h2>
         </div>
     <div class="arrival-filters">
-        <button>New In</button>
-        <button>Best Sellers</button>
-        <button>Race Day</button>
-        <button>Trail</button>
+        <button data-filter="all">New In</button>
+    <button data-filter="best">Best Sellers</button>
+    <button data-filter="race">Race Day</button>
+    <button data-filter="trail">Trail</button>
     </div>
 </div>
 <div class="arrival-products">
     <!-- Product 1 -->
-    <div class="product-card">
+    <div class="product-card" data-category="new">
         <div class="product-image">
             <span class="product-badge">NEW</span>
             <span class="wishlist">♡</span>
@@ -153,7 +153,7 @@
     </div>
 </div>
 <!-- Product 2 -->
-<div class="product-card">
+<div class="product-card" data-category="race">
     <div class="product-image">
         <span class="product-badge">NEW</span>
         <span class="wishlist">♡</span>
@@ -166,7 +166,7 @@
 </div>
 </div>
 <!-- Product 3 -->
-<div class="product-card">
+<div class="product-card" data-category="trail">
     <div class="product-image">
         <span class="product-badge">NEW</span>
         <span class="wishlist">♡</span>
@@ -179,7 +179,7 @@
 </div>
 </div>
 <!-- Product 4 -->
-<div class="product-card">
+<div class="product-card" data-category="best">
     <div class="product-image">
         <span class="product-badge sale-badge">SALE</span>
         <span class="wishlist">♡</span>
@@ -300,7 +300,7 @@
     <a href="#collections">Women's</a>
     <a href="#new-arrivals">Footwear</a>
     <a href="#collections">Apparel</a>
-    <a href="#">Accessories</a>
+    <a href="#collections">Accessories</a>
     <a href="#new-arrivals">Sale</a>
 </div>
 <!-- HELP -->
@@ -327,6 +327,7 @@
 <div class="footer-column">
     <h3>FOLLOW</h3>
     <a href="#">Instagram</a>
+
     <a href="#">Strava</a>
     <a href="#">TikTok</a>
     <a href="#">YouTube</a>

@@ -6,7 +6,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: Arial, sans-serif;
 }
@@ -14,14 +13,11 @@ body {
     height: 22px;
     background-color: #171717;
     color: white;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     overflow: hidden;
     position: relative;
-
     font-size: 9px;
     letter-spacing: 0.5px;
 }
@@ -29,7 +25,6 @@ body {
     width: 30%;
     padding-left: 24px;
 }
-
 .top-center {
     width: 40%;
     text-align: center;
@@ -50,8 +45,6 @@ body {
     display: inline-block;
     animation: scroll-center 15s linear infinite;
 }
-
-
 .navbar {
     display: flex;
     align-items: center;
@@ -66,8 +59,6 @@ body {
 .announcement-bar {
     animation: announcement-scroll 12s linear infinite;
 }
-
-
 .seasonal-bar {
     animation: seasonal-scroll 12s linear infinite;
 }
@@ -75,14 +66,10 @@ body {
     from {
         transform: translateX(100%);
     }
-
     to {
         transform: translateX(-100%);
     }
 }
-
-
-
 .center-group {
     display: flex;
     align-items: center;
@@ -95,25 +82,18 @@ body {
 }
 .center-group a {
     position: relative;
-
     text-decoration: none;
     color: #222;
-
     font-size: 13px;
 }
 .center-group a::after {
     content: "";
-
     position: absolute;
-
     left: 0;
     bottom: -6px;
-
     width: 0;
     height: 2px;
-
     background-color: #171717;
-
     transition: width 0.3s ease;
 }
 .center-group a:hover::after {
@@ -128,18 +108,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 22px;
     height: 22px;
 }
 .header-icon img {
     width: 19px;
     height: 19px;
-
     object-fit: contain;
-
     display: block;
-
     transition: transform 0.25s ease;
 }
 .header-icon:hover img {
@@ -150,7 +126,6 @@ body {
     font-weight: 800;
     letter-spacing: 1px;
 }
-
 .hero {
     position: relative;
     min-height: 520px;
@@ -194,25 +169,21 @@ body {
     letter-spacing: 0.8px;
     transition: all 0.3s ease;
 }
-
 .hero-btn.primary {
     background-color: #c4f52f;
     color: #111;
     border: 1px solid #c4f52f;
 }
-
 .hero-btn.secondary {
     background-color: transparent;
     color: white;
     border: 1px solid white;
 }
-
 .hero-btn.primary:hover {
     background-color: #111;
     color: #c4f52f;
     border-color: #111;
 }
-
 .hero-btn.secondary:hover {
     background-color: white;
     color: #111;
@@ -353,7 +324,6 @@ body {
     letter-spacing: 2px;
     color: #ff5a1f;
 }
-
 .arrivals-header h2 {
     margin: 0;
     font-size: 32px;
@@ -364,198 +334,127 @@ body {
     display: flex;
     gap: 6px;
 }
-
 .arrival-filters button {
     padding: 8px 15px;
-
     border: 1px solid #c9c5bd;
     border-radius: 20px;
-
     background: transparent;
     color: #222;
-
     font-size: 10px;
     cursor: pointer;
-
     transition: all 0.25s ease;
 }
-
 .arrival-filters button:first-child {
     background-color: #171717;
     color: white;
     border-color: #171717;
 }
-
 .arrival-filters button:hover {
     background-color: #171717;
     color: white;
     border-color: #171717;
 }
-
-
-/* ================================
-   PRODUCT GRID
-================================ */
-
+/*  PRODUCT GRID */
 .arrival-products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
 }
-
-
-/* ================================
-   PRODUCT CARD
-================================ */
+/* PRODUCT CARD */
 .product-card {
     position: relative;
     cursor: pointer;
     padding-bottom: 58px;
 }
-
-
-/* ================================
-   PRODUCT IMAGE
-================================ */
-
+/* PRODUCT IMAGE */
 .product-image {
     position: relative;
-
     width: 100%;
     height: 285px;
-
     overflow: hidden;
 }
-
 .product-image img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
-
     transition:
         transform 0.6s ease,
         filter 0.5s ease;
 }
-
 .product-image::after {
     content: "";
-
     position: absolute;
     inset: 0;
-
     background: rgba(0, 0, 0, 0);
-
     transition: background 0.5s ease;
-
     pointer-events: none;
 }
-
-
-
 .product-badge {
     position: absolute;
-
     top: 12px;
     left: 12px;
-
     z-index: 5;
-
     padding: 5px 8px;
-
     background-color: #171717;
     color: white;
-
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 1px;
 }
-
 .sale-badge {
     background-color: #ff5a3c;
 }
-
-
-/* ================================
-   WISHLIST
-================================ */
-
+/*  WISHLIST */
 .wishlist {
     position: absolute;
-
     top: 9px;
     right: 12px;
-
     z-index: 5;
-
     font-size: 21px;
     color: #171717;
-
     transition:
         color 0.3s ease,
         transform 0.3s ease;
 }
-
-
 .product-info {
     position: absolute;
-
     left: 0;
     bottom: 0;
-
     width: 100%;
     box-sizing: border-box;
-
     padding: 10px 0;
-
     z-index: 4;
-
     transition:
         bottom 0.6s ease,
         color 0.4s ease;
 }
-
 .product-brand {
     margin: 0 0 3px;
-
     font-size: 10px;
     color: #777;
 }
-
 .product-info h3 {
     position: relative;
-
     display: inline-block;
-
     margin: 0;
-
     font-size: 12px;
     font-weight: 700;
     color: #222;
 }
-
 .product-price {
     margin: 4px 0 0;
-
     font-size: 12px;
     font-weight: 700;
     color: #222;
 }
-
 .product-info h3::after {
     content: "";
-
     display: block;
-
     width: 12%;
     height: 2px;
-
     margin-top: 7px;
-
     background-color: #c8ff32;
-
     transition: width 0.4s ease;
 }
 /*Hover effect for new arrivals*/
@@ -563,7 +462,6 @@ body {
     transform: scale(1.12);
     filter: brightness(0.55);
 }
-
 .product-card:hover .product-image::after {
     background: rgba(0, 0, 0, 0.25);
 }
@@ -577,7 +475,6 @@ body {
 .product-card:hover .product-price {
     color: white;
 }
-
 /* Underline expands */
 .product-card:hover .product-info h3::after {
     width: 100%;
@@ -603,12 +500,9 @@ body {
 .brand-story {
     display: flex;
     align-items: stretch;
-
     padding: 80px 5%;
-
     background-color: #171717;
     color: white;
-
     gap: 50px;
 }
 .story-image {
@@ -618,50 +512,39 @@ body {
 .story-image img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
 }
 .story-content {
     width: 50%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding: 20px 40px;
 }
 .story-label {
     margin: 0 0 15px;
-
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2px;
-
     color: #c8ff32;
 }
 .story-content h2 {
     margin: 0 0 25px;
-
     font-size: 42px;
     line-height: 1.05;
     font-weight: 700;
 }
 .story-description {
     max-width: 480px;
-
     margin: 0 0 30px;
-
     font-size: 14px;
     line-height: 1.7;
-
     color: #cfcfcf;
 }
 .story-stats {
     display: flex;
     gap: 45px;
-
     margin-bottom: 35px;
 }
 .stat {
@@ -669,34 +552,25 @@ body {
 }
 .stat h3 {
     margin: 0 0 5px;
-
     font-size: 25px;
     font-weight: 700;
-
     color: #c8ff32;
 }
 .stat p {
     margin: 0;
-
     font-size: 10px;
     letter-spacing: 0.5px;
-
     color: #aaa;
 }
 .brand-story .story-button {
     align-self: flex-start;
-
     padding: 13px 20px;
-
     border: 1px solid white;
-
     color: white;
     text-decoration: none;
-
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 1px;
-
     transition: all 0.3s ease;
 }
 .brand-story .story-button:hover {
@@ -712,20 +586,15 @@ body {
 .collections-header {
     margin-bottom: 30px;
 }
-
 .collections-label {
     margin: 0 0 10px;
-
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2px;
-
     color: #ff5a1f;
 }
-
 .collections-header h2 {
     margin: 0;
-
     font-size: 38px;
     font-weight: 700;
     color: #171717;
@@ -733,75 +602,56 @@ body {
 .collection-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     gap: 16px;
 }
 .collection-card {
     position: relative;
-
     height: 500px;
-
     overflow: hidden;
-
     cursor: pointer;
 }
 .collection-card img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
-
     transition: transform 0.6s ease;
 }
 .collection-card::after {
     content: "";
-
     position: absolute;
     inset: 0;
-
     background: linear-gradient(
         transparent 35%,
         rgba(0, 0, 0, 0.75)
     );
-
     transition: background 0.4s ease;
 }
 .collection-content {
     position: absolute;
-
     left: 30px;
     bottom: 30px;
-
     z-index: 2;
-
     color: white;
 }
 .collection-content p {
     margin: 0 0 8px;
-
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 2px;
-
     color: #c8ff32;
 }
 .collection-content h3 {
     margin: 0 0 15px;
-
     font-size: 30px;
     font-weight: 700;
 }
 .collection-content a {
     color: white;
-
     text-decoration: none;
-
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 1px;
-
     transition: color 0.3s ease;
 }
 .collection-card:hover img {
@@ -819,232 +669,146 @@ body {
 /* ================================
    NEWSLETTER
 ================================ */
-
 .newsletter {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 70px 5%;
-
     background-color: #171717;
     color: white;
-
     border-bottom: 1px solid #3a3a3a;
 }
-
-
 /* LEFT CONTENT */
-
 .newsletter-content h2 {
     margin: 0 0 10px;
-
     font-size: 38px;
     font-weight: 700;
 }
-
 .newsletter-content p {
     margin: 0;
-
     font-size: 14px;
     color: #999;
-
     line-height: 1.5;
 }
-
-
 /* EMAIL + BUTTON */
-
 .newsletter-form {
     display: flex;
-
     width: 520px;
 }
-
 .newsletter-form input {
     flex: 1;
-
     padding: 18px 22px;
-
     border: 1px solid #555;
     border-right: none;
-
     background: transparent;
     color: white;
-
     font-size: 13px;
-
     outline: none;
 }
-
 .newsletter-form input::placeholder {
     color: #777;
 }
-
 .newsletter-form button {
     width: 160px;
-
     border: none;
-
     background-color: #c8ff32;
     color: #171717;
-
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
-
     cursor: pointer;
-
     transition: background-color 0.3s ease;
 }
-
 .newsletter-form button:hover {
     background-color: #b5eb28;
 }
-/* ================================
-   FOOTER
-================================ */
-
+/* FOOTER */
 .site-footer {
     background-color: #171717;
     color: white;
-
     padding: 0 5%;
 }
-
-
-/* ================================
-   FOOTER MAIN
-================================ */
-
+/*  FOOTER MAIN */
 .footer-main {
     display: grid;
-
     grid-template-columns:
         2fr
         1fr
         1fr
         1fr
         1fr;
-
     gap: 50px;
-
     padding: 65px 0;
 }
-
-
-/* ================================
-   PACELINE BRAND
-================================ */
-
+/* PACELINE BRAND */
 .footer-brand h2 {
     margin: 0 0 25px;
-
     font-size: 30px;
     font-weight: 800;
     letter-spacing: 1px;
 }
-
 .footer-brand p {
     max-width: 300px;
-
     margin: 0;
-
     font-size: 13px;
     line-height: 1.8;
-
     color: #999;
 }
-
-
-/* ================================
-   FOOTER COLUMNS
-================================ */
-
+/* FOOTER COLUMNS */
 .footer-column {
     display: flex;
     flex-direction: column;
 }
-
 .footer-column h3 {
     margin: 0 0 20px;
-
     font-size: 11px;
     font-weight: 800;
-
     letter-spacing: 2px;
 }
-
 .footer-column a {
     width: fit-content;
-
     margin-bottom: 12px;
-
     color: #999;
     text-decoration: none;
-
     font-size: 13px;
-
     transition: color 0.25s ease;
 }
-
 .footer-column a:hover {
     color: #c8ff32;
 }
-/* ================================
-   FOOTER BOTTOM
-================================ */
-
+/* FOOTER BOTTOM */
 .footer-bottom {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-
     padding: 30px 0;
-
     border-top: 1px solid #3a3a3a;
 }
-
 .footer-bottom p {
     margin: 0;
-
     font-size: 12px;
     color: #777;
 }
-
-
 /* LEGAL LINKS */
-
 .legal-links {
     display: flex;
     gap: 28px;
 }
-
 .legal-links a {
     color: #777;
-
     text-decoration: none;
-
     font-size: 12px;
-
     transition: color 0.25s ease;
 }
-
 .legal-links a:hover {
     color: white;
 }
-
-/* =========================
-   ABOUT — MAIN STORY
-========================= */
-
+/* ABOUT — MAIN STORY*/
 .about-hero {
     background-color: #f4f1e8;
     text-align: center;
     padding: 50px 6% 80px;
 }
-
 .about-breadcrumb {
     font-size: 11px;
     font-weight: 600;
@@ -1059,7 +823,6 @@ body {
     font-weight: 700;
     letter-spacing: -4px;
 }
-
 .about-intro {
     max-width: 700px;
     margin: 0 auto 65px;
@@ -1067,7 +830,6 @@ body {
     line-height: 1.7;
     color: #333;
 }
-
 .about-hero img {
     display: block;
     width: 100%;
@@ -1075,10 +837,6 @@ body {
     object-fit: cover;
 }
 /*WHY WE EXIST*/
-/* =========================
-   WHY WE EXIST
-========================= */
-
 .why-we-exist {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -1086,11 +844,9 @@ body {
     padding: 85px 4.5%;
     background-color: #f3eee3;
 }
-
 .why-left {
     padding-top: 5px;
 }
-
 .section-label {
     font-size: 8px;
     font-weight: 700;
@@ -1098,7 +854,6 @@ body {
     color: #f15a29;
     margin: 0 0 15px;
 }
-
 .why-left h2 {
     font-size: 42px;
     line-height: 0.95;
@@ -1106,61 +861,47 @@ body {
     margin: 0;
     font-weight: 800;
 }
-
 .why-right {
     max-width: 520px;
 }
-
 .why-right p {
     font-size: 11px;
     line-height: 1.6;
     color: #555;
     margin: 0 0 14px;
 }
-
 .why-right .founder-signature {
     font-size: 9px;
     font-weight: 700;
     color: #222;
     margin-top: 35px;
 }
-/* =========================
-   WHAT WE STAND FOR
-========================= */
-
+/* WHAT WE STAND FOR */
 .what-we-stand-for {
     background-color: #f3eee3;
     padding: 70px 4.5% 75px;
 }
-
 .stand-heading {
     margin-bottom: 28px;
 }
-
 .stand-heading h2 {
     font-size: 28px;
     line-height: 1.1;
     margin: 0;
     letter-spacing: -0.8px;
 }
-
 /* Cards container */
-
 .values-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 14px;
 }
-
 /* Outer card */
-
 .value-card {
     height: 230px;
     perspective: 1000px;
 }
-
 /* Rotating part */
-
 .value-card-inner {
     position: relative;
     width: 100%;
@@ -1168,15 +909,11 @@ body {
     transition: transform 0.7s ease;
     transform-style: preserve-3d;
 }
-
 /* Flip on hover */
-
 .value-card:hover .value-card-inner {
     transform: rotateY(180deg);
 }
-
 /* Front + Back */
-
 .value-card-front,
 .value-card-back {
     position: absolute;
@@ -1188,48 +925,38 @@ body {
     box-sizing: border-box;
     padding: 25px;
 }
-
 /* Front */
-
 .value-card-front {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .value-number {
     font-size: 42px;
     font-weight: 800;
     line-height: 1;
     margin-bottom: 12px;
 }
-
 .number-one {
     color: #ef592c;
 }
-
 .number-two {
     color: #baf22f;
 }
-
 .number-three {
     color: #d88a42;
 }
-
 .value-card-front h3 {
     font-size: 15px;
     line-height: 1.2;
     margin: 0;
 }
-
 /* Back */
-
 .value-card-back {
     display: flex;
     align-items: center;
     transform: rotateY(180deg);
 }
-
 .value-card-back p {
     font-size: 11px;
     line-height: 1.6;
@@ -1239,16 +966,13 @@ body {
 /* =========================
    TEN SEASONS IN — TIMELINE
 ========================= */
-
 .timeline-section {
     background-color: #f3eee3;
     padding: 80px 4.5%;
 }
-
 .timeline-heading {
     margin-bottom: 55px;
 }
-
 .timeline-heading h2 {
     font-size: 48px;
     line-height: 1;
@@ -1256,24 +980,18 @@ body {
     margin: 0;
     font-weight: 800;
 }
-
 /* Timeline layout */
-
 .timeline {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 28px;
 }
-
 /* Each timeline item */
-
 .timeline-item {
     position: relative;
     padding-top: 35px;
 }
-
 /* The straight line */
-
 .timeline-line {
     position: absolute;
     top: 0;
@@ -1284,15 +1002,11 @@ body {
     transition: background-color 0.4s ease,
                 box-shadow 0.4s ease;
 }
-
 /* Don't extend the last line beyond the timeline */
-
 .timeline-item:last-child .timeline-line {
     width: 100%;
 }
-
 /* Timeline content */
-
 .timeline-content h3 {
     font-size: 42px;
     line-height: 1;
@@ -1301,13 +1015,11 @@ body {
     font-weight: 800;
     letter-spacing: -1px;
 }
-
 .timeline-content h4 {
     font-size: 14px;
     margin: 0 0 25px;
     font-weight: 700;
 }
-
 .timeline-content p {
     max-width: 270px;
     font-size: 10px;
@@ -1315,108 +1027,85 @@ body {
     color: #666;
     margin: 0;
 }
-/* =========================
+/* 
    TIMELINE HOVER PROGRESS
-========================= */
-
+ */
 /* Hovering 2015 */
-
 .timeline:has(.timeline-item:nth-child(1):hover)
 .timeline-item:nth-child(1) .timeline-line {
     background-color: #f15a29;
     box-shadow: 0 0 8px rgba(241, 90, 41, 0.4);
 }
-
-
 /* Hovering 2018
    → 2015 + 2018 light up
 */
-
 .timeline:has(.timeline-item:nth-child(2):hover)
 .timeline-item:nth-child(-n+2) .timeline-line {
     background-color: #f15a29;
     box-shadow: 0 0 8px rgba(241, 90, 41, 0.4);
 }
-
-
 /* Hovering 2022
    → 2015 + 2018 + 2022 light up
 */
-
 .timeline:has(.timeline-item:nth-child(3):hover)
 .timeline-item:nth-child(-n+3) .timeline-line {
     background-color: #f15a29;
     box-shadow: 0 0 8px rgba(241, 90, 41, 0.4);
 }
-
-
 /* Hovering 2026
-   → everything lights up
+    everything lights up
 */
-
 .timeline:has(.timeline-item:nth-child(4):hover)
 .timeline-item:nth-child(-n+4) .timeline-line {
     background-color: #f15a29;
     box-shadow: 0 0 8px rgba(241, 90, 41, 0.4);
 }
-/* =========================
+/* 
    MEET THE FOUNDERS
-========================= */
-
+ */
 .founders-section {
     background-color: #f3eee3;
     padding: 80px 4.5%;
 }
-
 .founders-heading {
     margin-bottom: 30px;
 }
-
 .founders-heading h2 {
     font-size: 32px;
     line-height: 1;
     letter-spacing: -1px;
     margin: 0;
 }
-
 .founders-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
-
 .founder-card {
     position: relative;
     background-color: #ffffff;
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-/* =========================
-   MEET THE FOUNDERS
-========================= */
-
+/*  MEET THE FOUNDERS */
 .founders-section {
     background-color: #f3eee3;
     padding: 80px 4.5%;
 }
-
 .founders-heading {
     margin-bottom: 30px;
 }
-
 .founders-heading h2 {
     font-size: 32px;
     line-height: 1;
     letter-spacing: -1px;
     margin: 0;
 }
-
 .founders-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
 }
-
 .founder-card {
     position: relative;
     background-color: #ffffff;
@@ -1432,7 +1121,6 @@ body {
     height: 360px;
     overflow: hidden;
 }
-
 .founder-image img {
     display: block;
     width: 100%;
@@ -1443,7 +1131,6 @@ body {
     font-size: 18px;
     margin: 0 0 8px;
 }
-
 .founder-role {
     font-size: 9px;
     letter-spacing: 1.2px;
@@ -1451,7 +1138,6 @@ body {
     color: #f15a29;
     margin: 0 0 14px;
 }
-
 .founder-description {
     max-width: 500px;
     font-size: 10px;
@@ -1463,16 +1149,12 @@ body {
     position: absolute;
     left: 20px;
     bottom: 18px;
-
     background-color: #c4f52f;
     color: #111;
-
     padding: 6px 10px;
     border-radius: 20px;
-
     font-size: 8px;
     font-weight: 700;
-
     z-index: 2;
 }
 .founder-card::after {
@@ -1482,33 +1164,28 @@ body {
     left: -120%;
     width: 60%;
     height: 100%;
-
     background: linear-gradient(
         90deg,
         transparent,
         rgba(255, 255, 255, 0.45),
         transparent
     );
-
     transform: skewX(-20deg);
     transition: left 0.7s ease;
-
     pointer-events: none;
 }
 .founder-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
-/* =========================
+/* 
    ABOUT CTA
-========================= */
-
+ */
 .about-cta {
     background-color: #c4f52f;
     text-align: center;
     padding: 75px 5% 85px;
 }
-
 .cta-label {
     font-size: 8px;
     font-weight: 700;
@@ -1516,7 +1193,6 @@ body {
     margin: 0 0 28px;
     color: #111;
 }
-
 .about-cta h2 {
     font-size: clamp(55px, 7vw, 95px);
     line-height: 0.88;
@@ -1525,110 +1201,84 @@ body {
     margin: 0 0 35px;
     color: #111;
 }
-
 .cta-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 14px;
 }
-
 .cta-buttons a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     min-width: 145px;
     height: 48px;
-
     padding: 0 20px;
-
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 1px;
     text-decoration: none;
-
     transition: all 0.3s ease;
 }
-
 /* Filled button */
-
 .cta-primary {
     background-color: #111;
     color: #c4f52f;
     border: 1px solid #111;
 }
-
 .cta-primary:hover {
     background-color: transparent;
     color: #111;
 }
-
 /* Outlined button */
-
 .cta-secondary {
     background-color: transparent;
     color: #111;
     border: 1px solid #111;
-    
 }
-
 .cta-secondary:hover {
     background-color: #111;
     color: #c4f52f;
 }
-
-/* =========================
-   VISIT US
-========================= */
-
+/* VISIT US*/
 .visit-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 420px;
 }
-
 .visit-content {
     background-color: #171716;
     color: white;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding: 60px 12%;
 }
-
 .visit-content .section-label {
     color: #c4f52f;
     margin-bottom: 30px;
 }
-
 .visit-content h2 {
     font-size: 48px;
     line-height: 1;
     letter-spacing: -2px;
     margin: 0;
 }
-
 .visit-map {
     overflow: hidden;
 }
-
 .visit-map img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 /*ABOUT AND HOME PAGE NAVIGATION HOVER EFFECT*/
 .about-breadcrumb a {
     color: inherit;
     text-decoration: none;
     position: relative;
 }
-
 .about-breadcrumb a::after {
     content: "";
     position: absolute;
@@ -1639,597 +1289,461 @@ body {
     background-color: currentColor;
     transition: width 0.3s ease;
 }
-
 .about-breadcrumb a:hover::after {
     width: 100%;
 }
-
-/* ================================
+/* 
    MOBILE RESPONSIVENESS
-================================ */
-
+ */
 @media (max-width: 768px) {
-
-    /* ---------- HEADER ---------- */
-
+    /* HEADER  */
     .top-bar {
         height: 22px;
         font-size: 7px;
     }
-
     .top-left {
         width: 35%;
         padding-left: 8px;
     }
-
     .top-center {
         width: 30%;
     }
-
     .top-right {
         width: 35%;
         padding-right: 8px;
     }
-
     .navbar {
         padding: 12px 16px;
     }
-
     .left-group {
         font-size: 18px;
     }
-
     .center-group {
         display: none;
     }
-
     .right-group {
         gap: 10px;
     }
 .fa-cart-shopping {
-     width: 20px; 
-        height: 20px; 
-        color : black; 
-        text-decoration: none; 
+     width: 20px;
+        height: 20px;
+        color : black;
+        text-decoration: none;
         width: 17px;
         height: 17px;
 }
 .header-icon:active .fa-cart-shopping {
     color: #111;
 }
-  .header-icon { 
-        width: 20px; 
-        height: 20px; 
-        color : black; 
-        text-decoration: none; 
-         
-    }  
+  .header-icon {
+        width: 20px;
+        height: 20px;
+        color : black;
+        text-decoration: none;
+    }
     fa-solid fa-magnifying-glass
     {
-        width: 20px; 
-        height: 20px; 
-        color : black; 
-        text-decoration: none; 
+        width: 20px;
+        height: 20px;
+        color : black;
+        text-decoration: none;
         width: 17px;
         height: 17px;
     }
     .header-icon:active .fa-magnifying-glass {
     color: #111;
 }
-
     .search-bar {
     display: none;
 }
-
+.search-bar input {
+    height: 36px;
+    padding: 0 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 16px;
+}
 .search-bar.active {
     display: block;
 }
-    
-
-
     /* ---------- HOME HERO ---------- */
-
     .hero {
         min-height: 500px;
         background-position: center;
     }
-
     .hero-content {
         left: 7%;
         right: 7%;
         max-width: none;
     }
-
     .hero-label {
         font-size: 9px;
         margin-bottom: 15px;
     }
-
     .hero h1 {
         font-size: 46px;
         line-height: 0.95;
         margin-bottom: 20px;
     }
-
     .hero-description {
         max-width: 100%;
         font-size: 12px;
         margin-bottom: 25px;
     }
-
     .hero-buttons {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-
     .hero-btn {
         padding: 12px 16px;
         font-size: 9px;
     }
-
     .hero-slider {
         bottom: 18px;
         right: 7%;
     }
-
-
-    /* ---------- SHOP BY CATEGORY ---------- */
-
+    /*  SHOP BY CATEGORY  */
     .shop-category {
         padding: 55px 5%;
     }
-
     .category-header {
         display: block;
         margin-bottom: 25px;
     }
-
     .category-header h2 {
         font-size: 28px;
         line-height: 1.1;
     }
-
     .view-collections {
         display: inline-block;
         margin-top: 18px;
         font-size: 10px;
     }
-
     .category-cards {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-
     .category-card {
         height: 280px;
     }
-
     .category-content {
         bottom: 18px;
         left: 15px;
     }
-
     .category-content h3 {
         font-size: 18px;
     }
-
     .category-content p {
         font-size: 10px;
         margin-bottom: 10px;
     }
-
-
-    /* ---------- NEW ARRIVALS ---------- */
-
+    /*  NEW ARRIVALS */
     .new-arrivals {
         padding: 55px 5%;
     }
-
     .arrivals-header {
         display: block;
         margin-bottom: 25px;
     }
-
     .arrivals-header h2 {
         font-size: 27px;
     }
-
     .arrival-filters {
         flex-wrap: wrap;
         margin-top: 18px;
         gap: 6px;
     }
-
     .arrival-filters button {
         padding: 7px 12px;
         font-size: 9px;
     }
-
     .arrival-products {
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
-
     .product-card {
         padding-bottom: 55px;
     }
-
     .product-image {
         height: 210px;
     }
-
     .product-badge {
         top: 8px;
         left: 8px;
         padding: 4px 6px;
         font-size: 8px;
     }
-
     .wishlist {
         top: 6px;
         right: 8px;
         font-size: 18px;
     }
-
     .product-brand {
         font-size: 9px;
     }
-
     .product-info h3 {
         font-size: 10px;
     }
-
     .product-price {
         font-size: 10px;
     }
-
-
-    /* ---------- BRAND STORY ---------- */
-
+    /*  BRAND STORY  */
     .brand-story {
         display: flex;
         flex-direction: column;
         padding: 55px 5%;
         gap: 25px;
     }
-
     .story-image,
     .story-content {
         width: 100%;
     }
-
     .story-image {
         height: 300px;
     }
-
     .story-content {
         padding: 10px 0;
     }
-
     .story-content h2 {
         font-size: 34px;
     }
-
     .story-description {
         font-size: 12px;
         line-height: 1.6;
     }
-
     .story-stats {
         gap: 25px;
         flex-wrap: wrap;
         margin-bottom: 25px;
     }
-
     .stat h3 {
         font-size: 22px;
     }
-
     .brand-story .story-button {
         font-size: 9px;
     }
-
-
-    /* ---------- COLLECTIONS ---------- */
-
+    /*  COLLECTIONS  */
     .running-collections {
         padding: 55px 5%;
     }
-
     .collections-header h2 {
         font-size: 30px;
     }
-
     .collection-cards {
         grid-template-columns: 1fr;
         gap: 12px;
     }
-
     .collection-card {
         height: 400px;
     }
-
     .collection-content {
         left: 20px;
         bottom: 20px;
     }
-
     .collection-content h3 {
         font-size: 25px;
     }
-
-
-    /* ---------- NEWSLETTER ---------- */
-
+    /*  NEWSLETTER  */
     .newsletter {
         flex-direction: column;
         align-items: flex-start;
         gap: 25px;
         padding: 50px 5%;
     }
-
     .newsletter-content h2 {
         font-size: 30px;
     }
-
     .newsletter-content p {
         font-size: 12px;
     }
-
     .newsletter-form {
         width: 100%;
     }
-
     .newsletter-form input {
         min-width: 0;
         padding: 15px;
     }
-
     .newsletter-form button {
         width: 110px;
         font-size: 10px;
     }
-
-
     /* ---------- FOOTER ---------- */
-
     .site-footer {
         padding: 0 5%;
     }
-
     .footer-main {
         grid-template-columns: 1fr 1fr;
         gap: 35px 25px;
         padding: 50px 0;
     }
-
     .footer-brand {
         grid-column: 1 / -1;
     }
-
     .footer-brand h2 {
         font-size: 25px;
     }
-
     .footer-brand p {
         font-size: 11px;
     }
-
     .footer-column h3 {
         font-size: 10px;
         margin-bottom: 15px;
     }
-
     .footer-column a {
         font-size: 11px;
         margin-bottom: 10px;
     }
-
     .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
         padding: 25px 0;
     }
-
     .footer-bottom p {
         font-size: 10px;
     }
-
     .legal-links {
         gap: 15px;
         flex-wrap: wrap;
     }
-
     .legal-links a {
         font-size: 10px;
     }
-
-
-    /* ================================
+    /* 
        ABOUT PAGE
-    ================================ */
-
+     */
     .about-hero {
         padding: 35px 5% 50px;
     }
-
     .about-breadcrumb {
         margin-bottom: 35px;
         font-size: 9px;
     }
-
     .about-hero h1 {
         font-size: 58px;
         letter-spacing: -2px;
     }
-
     .about-intro {
         font-size: 13px;
         line-height: 1.6;
         margin-bottom: 40px;
     }
-
     .about-hero img {
         height: 300px;
     }
-
-
-    /* ---------- WHY WE EXIST ---------- */
-
+    /* WHY WE EXIST  */
     .why-we-exist {
         grid-template-columns: 1fr;
         gap: 35px;
         padding: 55px 5%;
     }
-
     .why-left h2 {
         font-size: 36px;
     }
-
     .why-right {
         max-width: none;
     }
-
     .why-right p {
         font-size: 11px;
     }
-
-
-    /* ---------- WHAT WE STAND FOR ---------- */
-
+    /*  WHAT WE STAND FOR */
     .what-we-stand-for {
         padding: 55px 5%;
     }
-
     .stand-heading h2 {
         font-size: 25px;
     }
-
     .values-container {
         grid-template-columns: 1fr;
         gap: 12px;
     }
-
     .value-card {
         height: 210px;
     }
-
-
-    /* ---------- TIMELINE ---------- */
-
+    /* TIMELINE  */
     .timeline-section {
         padding: 55px 5%;
     }
-
     .timeline-heading {
         margin-bottom: 40px;
     }
-
     .timeline-heading h2 {
         font-size: 38px;
     }
-
     .timeline {
         grid-template-columns: 1fr;
         gap: 35px;
     }
-
     .timeline-item {
         padding-top: 25px;
     }
-
     .timeline-content h3 {
         font-size: 36px;
         margin-bottom: 15px;
     }
-
     .timeline-content h4 {
         font-size: 13px;
         margin-bottom: 15px;
     }
-
     .timeline-content p {
         max-width: none;
         font-size: 10px;
     }
-
-
-    /* ---------- VISIT US ---------- */
-
+    /*  VISIT US  */
     .visit-section {
         grid-template-columns: 1fr;
         min-height: auto;
     }
-
     .visit-content {
         min-height: 280px;
         padding: 50px 8%;
     }
-
     .visit-content h2 {
         font-size: 40px;
     }
-
     .visit-map {
         height: 300px;
     }
-
-
-    /* ---------- FOUNDERS ---------- */
-
+    /* FOUNDERS  */
     .founders-section {
         padding: 55px 5%;
     }
-
     .founders-heading {
         margin-bottom: 25px;
     }
-
     .founders-heading h2 {
         font-size: 28px;
     }
-
     .founders-container {
         grid-template-columns: 1fr;
         gap: 15px;
     }
-
     .founder-image {
         height: 320px;
     }
-
     .founder-info {
         padding: 18px 20px 24px;
     }
-
     .founder-info h3 {
         font-size: 17px;
     }
-
     .founder-description {
         font-size: 10px;
     }
-
-
-    /* ---------- ABOUT CTA ---------- */
-
+    /*  ABOUT CTA  */
     .about-cta {
         padding: 60px 5% 65px;
     }
-
     .about-cta h2 {
         font-size: 48px;
         letter-spacing: -2px;
     }
-
     .cta-buttons {
         flex-direction: column;
         width: 100%;
     }
-
     .cta-buttons a {
         width: 100%;
         max-width: 280px;
