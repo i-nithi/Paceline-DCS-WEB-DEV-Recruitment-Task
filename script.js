@@ -18,6 +18,8 @@ searchIcon.addEventListener("click", function(event) {
     event.preventDefault();
     searchBar.classList.toggle("active");
 });
+
+//book gait analysis 
 const bookGaitBtn = document.getElementById("bookGaitBtn");
 
 if (bookGaitBtn) {
@@ -42,7 +44,7 @@ if (bookGaitBtn) {
         }, 3000);
     });
 }
-
+//home page filterring section
 const filterButtons = document.querySelectorAll(".arrival-filters button");
 const products = document.querySelectorAll(".product-card");
 
@@ -61,7 +63,7 @@ filterButtons.forEach(button => {
 
     });
 });
-
+//footer interactions
 function showMessage(event, message) {
     event.preventDefault();
 
@@ -81,5 +83,20 @@ document.querySelectorAll(".coming-soon").forEach(link => {
     link.addEventListener("click", function(event) {
         event.preventDefault();
         alert("This page is coming soon!");
+    });
+});
+
+//wishlist icon turning red 
+const wishlistIcons = document.querySelectorAll(".wishlist");
+
+wishlistIcons.forEach(function(icon) {
+    icon.addEventListener("click", function() {
+        if (icon.classList.contains("active")) {
+            icon.classList.remove("active");
+            icon.textContent = "♡";
+        } else {
+            icon.classList.add("active");
+            icon.textContent = "♥";
+        }
     });
 });

@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
 }
 .top-bar {
-    height: 22px;
+    height: 25px;
     background-color: #171717;
     color: white;
     display: flex;
@@ -877,7 +877,7 @@ body {
     max-width: 520px;
 }
 .why-right p {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.6;
     color: #555;
     margin: 0 0 14px;
@@ -1502,6 +1502,14 @@ body {
     .product-price {
         font-size: 10px;
     }
+    .wishlist {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.wishlist.active {
+    color: red;
+}
     /*  BRAND STORY  */
     .brand-story {
         display: flex;
